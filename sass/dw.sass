@@ -1,10 +1,61 @@
 @import "compass/reset"
+@import "compass/css3"
 
+$dw_orange: #dd3800
+
+
+// ============================================================================
+//
+// Base Layout
+//
+// ============================================================================
 body
-  font-family: "bryant-web-condensed", "Helvetica", "Arial", sans-serif
+  background-color: #f3f3f3
 
 #page_container
-  width: 88%
-  max-width: 1080px
   margin-left: auto
   margin-right: auto
+  padding: 1.4em 8.33333%
+  border-top: 4px solid $dw_orange
+  +box-sizing(border-box)
+
+  @media (min-width: 768px)
+    width: 640px
+    padding: 3em 0
+
+
+
+// ============================================================================
+//
+// Base Typography
+//
+// ============================================================================
+body
+  font-family: "bryant-web-condensed", "Helvetica", "Arial", sans-serif
+  font-size: 1.4em
+  line-height: 1.2em
+  font-weight: 400
+  color: #555
+
+a
+  text-decoration: underline
+  color: #111
+
+  &:hover
+    text-decoration: none
+
+h1
+  font-size: 1.4em
+  line-height: 1.2em
+  margin-bottom: .6em
+
+  @media (min-width: 768px)
+    font-size: 1.6em
+    line-height: 1.2em
+
+h2
+  font-size: 1em
+  margin-bottom: .6em
+
+h3
+  font-size: .75em
