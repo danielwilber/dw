@@ -1,2 +1,3 @@
-pygments: true
-exclude: [sass, config.rb]
+sass:
+  syntax: sass
+  style: expanded
