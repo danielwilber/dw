@@ -1,0 +1,6 @@
+exclude: [ "bin", "public", "Gemfile", "Gemfile.lock" ]
+destination: public
+
+sass:
+  syntax: sass
+  style: expanded

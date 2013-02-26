@@ -1,0 +1,50 @@
+---
+title: Home
+layout: default
+---
+
+<div id="home-header" class="home-section">
+  <h1>Daniel Wilber</h1>
+</div>
+
+<div id="home-hello" class="home-section">
+  <h2>Hello</h2>
+  <p>
+    I am a professional designer working on digital brands, products and experiences. I co-founded <a href="http://bondfire.co" target="_blank">Bondfire Inc.</a> and live with my <a href="http://instagram.com/p/RWjwHNj7_U/" target="_blank">wife &amp; two boys</a> in Ventura, California.
+  </p>
+</div>
+
+<ul id="home-elsewhere" class="home-section">
+  <h2>Elsewhere</h2>
+  <li>
+    <span class="label">Email:</span>
+    <a href="mailto:daniel@bondfire.co" target="_blank">daniel@bondfire.co</a>
+  </li>
+  <li>
+    <span class="label">Twitter:</span>
+    <a href="http://twitter.com/danielwilber" target="_blank">@danielwilber</a>
+  </li>
+  <li>
+    <span class="label">Instagram:</span>
+    <a href="http://instagram.com/danielwilber" target="_blank">@danielwilber</a>
+  </li>
+  <li>
+    <span class="label">Rdio:</span>
+    <a href="http://rdio.com/people/wlbr" target="_blank">@wlbr</a>
+  </li>
+</ul>
+
+<div id="home-feelings" class="home-section">
+  <h2>Feelings</h2>
+
+  {% if site.posts.size > 0 %}
+    <ul id="home-recent-posts">
+      {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>I have not written anything yet.</p>
+  {% endif %}
+
+</div>

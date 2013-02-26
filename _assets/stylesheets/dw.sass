@@ -1,0 +1,102 @@
+// ============================================================================
+// Variabless
+// ============================================================================
+$blue: #2C2C7D
+$red: #A72B1D
+
+$apercuRegular: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif
+$apercuBold: "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif
+
+$mediaTablet: "screen and (min-width: 40em)"
+$mediaDesktop: "screen and (min-width: 60em)"
+
+// ============================================================================
+// Typography
+// ============================================================================
+
+// Global
+html *
+  visibility: hidden
+
+html.wf-active *
+  visibility: visible
+
+body
+  font-family: $apercuRegular
+  font-weight: normal
+  font-style: normal
+  color: $blue
+
+// Headers
+h1, h2, h3, h4, h5
+  font-family: $apercuBold
+  margin: 0
+  font-weight: bold
+
+h1
+  font-size: 1.6em
+  margin-bottom: .2em
+  padding-bottom: .4em
+  border-bottom: 4px solid $blue
+
+h2
+  line-height: 1.4em
+  margin-bottom: .2em
+
+// Body Elements
+p
+  margin: 0
+
+p, li, a
+  font-size: 1.1em
+  font-size: 1.1em
+  line-height: 1.6em
+
+// Links
+a, a:visited
+  color: $red
+
+  &:hover
+    text-decoration: none
+
+// Lists
+ul
+  margin-top: 0
+  padding: 0
+  list-style: none
+
+// ============================================================================
+// Global Layout
+// ============================================================================
+body
+  padding: 2em .8em
+
+  @media #{$mediaTablet}
+    padding: 4em 0
+
+.wrapper
+  max-width: 34em
+  margin: 0 auto
+
+footer
+  border-top: 4px solid $blue
+  padding-top: 1em
+
+// ============================================================================
+// Home Page
+// ============================================================================
+.home-section
+  margin-bottom: 2em
+
+#home-elsewhere li
+  position: relative
+  height: 1.6em
+
+  .label, a
+    position: absolute
+
+  .label
+    left: 0
+
+  a
+    left: 6em
