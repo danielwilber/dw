@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Daniel Wilber</title>
+
+    <!-- Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="author" content="Daniel Wilber">
+    <meta name="description" content="Daniel Wilber: Brand, Product &amp; Experience Design">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+
+    <!-- JS -->
+    <script type="text/javascript">
+      WebFontConfig = {
+        fontdeck: {
+          id: '30034'
+        }
+      };
+
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+
+    <!-- CSS -->
+    {% css_asset_tag global %}
+    - /_assets/stylesheets/normalize.css
+    - /_assets/stylesheets/dw.sass
+    {% endcss_asset_tag %}
+  </head>
+
+  <body>
+    <div class="wrapper">
+      {{ content }}
+      {% include footer.html %}
+    </div>
+  </body>
+
+</html>

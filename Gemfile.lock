@@ -23,6 +23,9 @@ GEM
     jekyll-asset-pipeline (0.1.6)
       jekyll (~> 0.12)
       liquid (~> 2.4)
+    jekyll-haml (0.0.1)
+      haml (>= 3.0.0)
+      jekyll (>= 0.10.0)
     kramdown (0.13.8)
     liquid (2.4.1)
     maruku (0.6.1)
@@ -42,7 +45,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-script
-  haml
   jekyll
   jekyll-asset-pipeline
+  jekyll-haml
   sass
