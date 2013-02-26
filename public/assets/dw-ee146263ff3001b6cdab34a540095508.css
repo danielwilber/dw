@@ -414,21 +414,31 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 1.6em;
-  margin-bottom: 0.2em; }
+  margin-bottom: 0.2em;
+  padding-bottom: 0.4em;
+  border-bottom: 4px solid #2c2c7d; }
 
 h2 {
   line-height: 1.4em;
   margin-bottom: 0.2em; }
 
 p {
-  font-size: 1.1em;
-  line-height: 1.6em;
   margin: 0; }
+
+p, li, a {
+  font-size: 1.1em;
+  font-size: 1.1em;
+  line-height: 1.6em; }
 
 a, a:visited {
   color: #a72b1d; }
   a:hover, a:visited:hover {
     text-decoration: none; }
+
+ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none; }
 
 body {
   padding: 2em 0.8em; }
@@ -447,23 +457,12 @@ footer {
 .home-section {
   margin-bottom: 2em; }
 
-#home-header {
-  margin-bottom: 2em; }
-  #home-header h1 {
-    padding-bottom: 0.4em;
-    border-bottom: 4px solid #2c2c7d; }
-
-#home-elsewhere {
-  margin-top: 0;
-  padding: 0;
-  list-style: none; }
-  #home-elsewhere li {
-    position: relative;
-    height: 1.6em;
-    font-size: 1.1em; }
-    #home-elsewhere li .label, #home-elsewhere li a {
-      position: absolute; }
-    #home-elsewhere li .label {
-      left: 0; }
-    #home-elsewhere li a {
-      left: 6em; }
+#home-elsewhere li {
+  position: relative;
+  height: 1.6em; }
+  #home-elsewhere li .label, #home-elsewhere li a {
+    position: absolute; }
+  #home-elsewhere li .label {
+    left: 0; }
+  #home-elsewhere li a {
+    left: 6em; }

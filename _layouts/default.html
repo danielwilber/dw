@@ -12,26 +12,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
     <!-- JS -->
-    <script type="text/javascript">
-      WebFontConfig = {
-        fontdeck: {
-          id: '30034'
-        }
-      };
-
-      (function() {
-        var wf = document.createElement('script');
-        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
-        '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(wf, s);
-      })();
-    </script>
+    {% javascript_asset_tag dw %}
+    - /_assets/javascripts/fontdeck.js
+    {% endjavascript_asset_tag %}
 
     <!-- CSS -->
-    {% css_asset_tag global %}
+    {% css_asset_tag dw %}
     - /_assets/stylesheets/normalize.css
     - /_assets/stylesheets/dw.sass
     {% endcss_asset_tag %}

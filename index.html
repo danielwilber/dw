@@ -36,8 +36,15 @@ layout: default
 
 <div id="home-feelings" class="home-section">
   <h2>Feelings</h2>
-  <p>I have not written anything, yet.</p>
-  {% for post in site.posts %}
-    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
+
+  {% if site.posts.size > 0 %}
+    <ul id="home-recent-posts">
+      {% for post in site.posts %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>I have not written anything yet.</p>
+  {% endif %}
+
 </div>
