@@ -7,6 +7,8 @@ $red: #A72B1D
 $apercuRegular: "Apercu Regular", "Helvetica Neue", Helvetica, sans-serif
 $apercuBold: "Apercu Bold", "Helvetica Neue", Helvetica, sans-serif
 
+$mediaTablet: "screen and (min-width: 40em)"
+
 // ============================================================================
 // Typography
 // ============================================================================
@@ -50,7 +52,10 @@ a, a:visited
 // Global Layout
 // ============================================================================
 body
-  padding: 1em .8em
+  padding: 2em .8em
+
+  @media #{$mediaTablet}
+    padding: 4em 0
 
 .wrapper
   max-width: 34em
